@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave&family=Titillium+Web&display=swap');
+
+:root {
+    --primary-wrapper: #fff;
+    --primary-input: #efefef;
+    --primary-button: #eaeaea;
+    --primary-text:#222;
+
+    --secondary-wrapper:#22252D;
+    --secondary-input: #292D36;
+    --secondary-button:#272B33;
+    --secondary-text:#fff;
+  }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    transition: .2s;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background: rgb(17,28,27);
+    background: linear-gradient(90deg, rgba(17,28,27,1) 0%, rgba(27,41,71,1) 100%); 
+}
+
+.wrapper{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    background:var(--primary-wrapper);
+    height: 98%;
+    border-radius: 25px;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+
+
+
+
+.input{
+    border-radius: 25px;
+    background: var(--primary-input);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 10px;
+    align-self: flex-end;
+}
+
+
+
+
+
+#plus-minus img{
+    width:20px;
+    height: auto;
+}
+
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.input button{
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    background: var(--primary-button);
+    color:var(--primary-text);
+    transition: .5s;
+
+}
+
+.theme{
+    padding: 20px;
+    display: flex;
+}
+
+.theme button{
+    outline: none;
+    border: none;
+    height: 45px;
+    box-shadow: none;
+}
+.theme button i {
+    font-size: 20px;
+}
+
+#light{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#dark{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.red,.red i {
+    color:#EE7878;
+}
+.green,.green i {
+    color:#26EDC9;
+}
+
+
+button:hover{
+    background-color:#ddd;
+}
+
+
+.output{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.upper, .lower{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap:10px;
+    color:var(--primary-text);
+}
+
+
+
+.upper i, .lower i{
+    font-size: 20px;
+}
+
+.lower{
+    font-size: 40px;
+    font-weight: 1000;
+}

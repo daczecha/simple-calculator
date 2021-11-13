@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id  = "wrapper" class="wrapper">
+        <div class="theme">
+            <button id = "light" onclick = "Light()">
+                <i id = "lighti" class="far fa-sun"></i>
+            </button>
+            <button id="dark" onclick="Dark()">
+                <i id="darki" class="far fa-moon"></i>
+            </button>
+        </div>
+        <div class="output">
+            <div id = "upper" class="upper">
+                0
+            </div>
+            <div id = "lower"  class="lower">
+                0
+            </div>
+        </div>
+        <div id = "input" class="input">
+            <button class = "green" id="ac">
+                <i class = "far">AC</i>
+            </button>
+            <button class = "green" id="plus-minus">
+                <img src="img/plusminus.png" alt="+/-">
+            </button>
+            <button class = "green" id="percentage">
+                <i class="fas fa-percentage"></i>
+            </button>
+            <button class = "red"  id="divide">
+                <i class="fas fa-divide"></i>
+            </button>
+            <button id="7">
+                7
+            </button>
+            <button id="8">
+                8
+            </button>
+            <button id="9">
+                9
+            </button>
+            <button  class = "red" id="multiply">
+                <i class="fas fa-times"></i>
+            </button>
+            <button id="4">
+                4
+            </button>
+            <button id="5">
+                5
+            </button>
+            <button id="6">
+                6
+            </button>
+            <button  class = "red" id="minus">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button id="1">
+                1
+            </button>
+            <button id="2">
+                2
+            </button>
+            <button id="3">
+                3
+            </button>
+            <button class = "red"  id="plus">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button id="undo">
+                <i class="fas fa-undo"></i>
+            </button>
+            <button id="0">
+                0
+            </button>
+            <button id="period">
+                .
+            </button>
+            <button class = "red"  id="equals">
+                <i class="fas fa-equals"></i>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="scripts/script.js"></script>
+<script src="scripts/theme.js"></script>
+</html>
