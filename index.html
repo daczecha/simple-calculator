@@ -17,23 +17,20 @@
             </button>
         </div>
         <div class="output">
-            <input type="text" id = "lastOperationScreen" class="upper" placeholder="0" disabled>
+            <input data-previous-operand type="text" id = "lastOperationScreen" class="upper" placeholder="0" disabled>
              </input>
-            <input type = "text" id = "currentOperationScreen"  class="lower" placeholder="0" disabled>
+            <input data-current-operand type = "text" id = "currentOperationScreen"  class="lower" placeholder="0" disabled>
             </input>
         </div>
         <div id = "input" class="input">
-            <button class = "green" id="clearBtn" >
+            <button data-all-clear class = "green" id="clearBtn" >
                 <i class = "far">AC</i>
             </button>
-            <button class = "green" id="plus-minus" >
-                <img src="img/plusminus.png" alt="+/-">
+            <button data-delete id="deleteBtn">
+                <i class="fas fa-undo"></i>
             </button>
-            <button class = "green" id="percentage">
-                <i class="fas fa-percentage"></i>
-            </button>
-            <button class = "red"  id="÷"   data-operator>
-                <i class="fas fa-divide"></i>
+            <button class = "red"  id="÷"   data-operation>
+                ÷
             </button>
             <button data-number>
                 7
@@ -44,8 +41,8 @@
             <button data-number>
                 9
             </button>
-            <button  class = "red" id="×"  data-operator>
-                <i class="fas fa-times"></i>
+            <button  class = "red" id="×"  data-operation>
+                *
             </button>
             <button data-number>
                 4
@@ -56,8 +53,8 @@
             <button data-number>
                 6
             </button>
-            <button  class = "red" id="-" data-operator>
-                <i class="fas fa-minus"></i>
+            <button  class = "red" id="-" data-operation>
+                -
             </button>
             <button data-number>
                 1
@@ -68,20 +65,17 @@
             <button data-number>
                 3
             </button>
-            <button class = "red"  id="+"  data-operator>
-                <i class="fas fa-plus"></i>
-            </button>
-            <button id="deleteBtn">
-                <i class="fas fa-undo"></i>
-            </button>
-            <button data-number>
-                0
+            <button class = "red"  id="+"  data-operation>
+                +
             </button>
             <button id="pointBtn" data-number>
                 .
             </button>
-            <button class = "red"  id="equalsBtn">
-                <i class="fas fa-equals"></i>
+            <button data-number>
+                0
+            </button>
+            <button data-equals class = "red"  id="equalsBtn">
+                =
             </button>
         </div>
     </div>

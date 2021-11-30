@@ -19,7 +19,7 @@
     box-sizing: border-box;
     font-size: 20px;
     transition: .2s;
-    font-family: 'Titillium Web', sans-serif;
+    font-family:  sans-serif;
 }
 
 body{
@@ -54,7 +54,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 14px;
     padding: 30px 10px;
     align-self: flex-end;
 }
@@ -85,7 +85,6 @@ button{
     outline:none;
     border-radius: 20px;
     transition: .2s;
-
 }
 
 .theme{
@@ -162,4 +161,10 @@ button{
 
 #operation{
     font-size:13px;
+}
+
+#clearBtn,
+#equalsBtn{
+    width: 100px;
+    margin:0 7px;
 }
